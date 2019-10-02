@@ -30,162 +30,220 @@ newElement.appendChild (newElement1)
    destination.appendChild(newElement);
 }
 
-
-
-function oneThroughTwenty() {
-    const numbers = [];
-   
-    // Your code goes below
-for (let counter = 1; counter <= 20; counter++){
-    numbers.push(counter)
+function Kata1 ()
+{
+   let arr = [];
+   for (let i = 1; i <= 20; i++)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K1").innerHTML = "Katas1=" + arr;
 }
-    // 
-return numbers
-   
+Kata1();
+
+
+function Kata2 ()
+{
+   let arr = [];
+   for (let i = 2; i <= 20; i += 2)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K2").innerHTML = "Katas2=" + arr;
 }
-writeToPage("kata #1 ", oneThroughTwenty() ) 
-    
+Kata2();
 
 
-function evensToTwenty() {
-    const evennumbers = []
-     // Your code goes below
-for (let i=1; i <= 20; i++){
-  if (i % 2 === 0){
-  evennumbers.push (i)
+function Kata3 ()
+{
+   let arr = [];
+   for (let i = 1; i <= 20; i+= 2)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K3").innerHTML = "Katas3=" + arr;
 }
-   
-  
+Kata3();
 
-} 
- return evennumbers 
+
+function Kata4 ()
+{
+   let arr = [];
+   for (let i = 5; i <= 100; i+= 5)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K4").innerHTML = "Katas4=" + arr;
 }
-writeToPage("kata #2 ",  evensToTwenty() )  
-    
-   
-    
-    
-  function oddsToTwenty() {
-    const numbers = []
-    // Your code goes below
-    for (let counter = 1; counter <= 20; counter++){  
- if (counter % 2 === 1){
-numbers.push(counter)
+Kata4();
+
+
+function Kata5 ()
+{
+   let arr = [];
+   for (let i = 1; i <= 10; i++)
+   {
+       arr.push(" " + i*i);
+   }
+   document.getElementById("K5").innerHTML = "Katas5=" + arr;
 }
+Kata5();
+
+
+function Kata6 ()
+{
+   let arr = [];
+   for (let i = 20; i >= 1; i--)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K6").innerHTML = "Katas6=" + arr;
 }
-return numbers
-  }
-  writeToPage("kata #3 ", oddsToTwenty() )
+Kata6();
 
 
-
-function multiplesOfFive() {
-    const numbers = []
-    // Your code goes below
-    for (let counter = 5; counter <= 100; counter++){
-        if(counter % 5 === 0){
-            numbers.push(counter)
-        }
-    }
-
-    
-
-    return numbers
+function Kata7 ()
+{
+   let arr = [];
+   for (let i = 20; i >= 1; i-= 2)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K7").innerHTML =  "Katas7=" + arr;
 }
-writeToPage("kata #4 ", multiplesOfFive() )
+Kata7();
 
-function squareNumbers() {
-    const numbers = []
-    // Your code goes below
-    for(let counter = 1; counter <= 10; counter++){
-        let square = counter * counter
-        numbers.push(square)
-    }
-    
 
-    return numbers
+function Kata8 ()
+{
+   let arr = [];
+   for (let i = 19; i >= 1; i-= 2)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K8").innerHTML = "Katas8=" + arr;
 }
-writeToPage("kata #5 ", squareNumbers() )
+Kata8();
 
-function countingBackwards() {
-   const numbers = [];
-   
-    // Your code goes below
-for (let counter =  20; counter >=  1; counter--){
-    numbers.push(counter)
+
+function Kata9 ()
+{
+   let arr = [];
+   for (let i = 100; i > 0; i-= 5)
+   {
+       arr.push(" " + i);
+   }
+   document.getElementById("K9").innerHTML = "Katas9=" + arr;
 }
-    // 
+Kata9();
 
-    return numbers 
-    // Your code goes below
 
-   
+function Kata10 ()
+{
+   let arr = [];
+   for(let i = 10; i >= 1; i--)
+   {
+       arr.push(" "+ i*i);
+   }
+   document.getElementById("K10").innerHTML = "Katas10=" + arr;
 }
-writeToPage("kata #6 ", countingBackwards() )
+Kata10();
 
-function evenNumbersBackwards() {
-    const numbers = []
-     // Your code goes below
-for (let counter = 20; counter >= 0; counter--){
-    if (counter % 2 === 0)
-    numbers.push(counter)
-}   
-    
-   
 
-    // 
-
-    return numbers
-    
+function Kata11 ()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   document.getElementById("K11").innerHTML = "Katas11= " + arr;
 }
-writeToPage("kata #7 ", evenNumbersBackwards() )
+Kata11();
 
-function oddNumbersBackwards() {
-    const numbers = []
-     // Your code goes below
-     for (let counter = 20; counter >= 1; counter--){
-        if (counter % 2 == 1)
-    
-        numbers.push(counter)
-    }
-     return numbers
+
+function Kata12 ()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   let Solution = [];
+   for (i = 0; i < arr.length; i++)
+   {
+       if(arr[i]%2 == 0)
+       {
+           Solution.push(" "+ arr[i]);
+       }
+   }
+   document.getElementById("K12").innerHTML = "Katas12=" + Solution;
 }
-writeToPage("kata #8 ", oddNumbersBackwards() )
+Kata12();
 
-function multiplesOfFiveBackwards() {
-    const numbers = []
-    // Your code goes below
-    for(let counter = 100; counter >= 5; counter--){
-        if (counter % 5 == 0)
-      
-        numbers.push(counter)
-    }
 
-    return numbers
+function Kata13 ()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   let Solution = [];
+   for (i = 0; i < arr.length; i++)
+   {
+       if(arr[i]%2 == 1)
+       {
+           Solution.push(" "+ arr[i]);
+       }
+   }
+   document.getElementById("K13").innerHTML = "Katas13=" + Solution;
 }
-writeToPage("kata #9 ", multiplesOfFiveBackwards() )
+Kata13();
 
-function squareNumbersBackwards() {
-    const numbers = []
-    // Your code goes below
-    for (let counter = 10; counter >= 1; counter--){
-        let square = counter * counter
-       
-       numbers.push(square)
-        
-    }
 
-    return numbers
+function Kata14 ()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   let Solution = []
+   for (i = 0; i < arr.length; i++)
+   {
+       Solution.push(" "+ arr[i]*arr[i]);
+   }
+   document.getElementById("K14").innerHTML =  "Katas14=" + Solution;
 }
-writeToPage("kata #10 ", squareNumbersBackwards() )
+Kata14();
 
 
-const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
-    
-    for ( let counter = 0; counter <= sampleArray.length-1; counter++) {
-        writeToPage ("kata #11",  sampleArray [counter]) 
-    
-        
-    } 
+function Kata15()
+{
+   let sum = 0;
+   for (i=0; i <=20; i++)
+   {
+       sum += i;
+   }
+   document.getElementById("K15").innerHTML = "Katas15= " + sum;
+}
+Kata15();
+
+
+function Kata16()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   let sum = 0;
+   for (i=0; i < arr.length; i++)
+   {
+       sum += arr[i];
+   }
+   document.getElementById("K16").innerHTML = "Katas16= " + sum;
+}
+Kata16();
+
+
+function Kata17()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   let sum = Math.min(...arr);
+   document.getElementById("K17").innerHTML = "Katas17= " + sum;
+}
+Kata17();
+
+
+function Kata18()
+{
+   let arr = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+   let sum = Math.max(...arr);
+   document.getElementById("K18").innerHTML = "Katas18= " + sum;
+}
+Kata18();
+
     
    // writeToPage("kata #11 ", sampleArray ) 
